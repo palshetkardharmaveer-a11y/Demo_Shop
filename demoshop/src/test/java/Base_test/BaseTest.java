@@ -27,11 +27,11 @@ public class BaseTest {
         test = extent.createTest(method.getName());
 
         // ✅ FirefoxOptions setup
-        FirefoxOptions options = new FirefoxOptions();
-        options.addPreference("signon.rememberSignons", false);   // disable save password
-        options.addPreference("extensions.formautofill.available", "off"); // disable autofill
-        options.addPreference("extensions.formautofill.addresses.enabled", false); // disable save address
-        options.addPreference("extensions.formautofill.creditCards.enabled", false); // disable save cards
+       FirefoxOptions options = new FirefoxOptions();
+    //    options.addPreference("signon.rememberSignons", false);   // disable save password
+      //  options.addPreference("extensions.formautofill.available", "off"); // disable autofill
+        //options.addPreference("extensions.formautofill.addresses.enabled", false); // disable save address
+        //options.addPreference("extensions.formautofill.creditCards.enabled", false); // disable save cards
 
         driver = new FirefoxDriver(options);
         driver.manage().window().maximize();
