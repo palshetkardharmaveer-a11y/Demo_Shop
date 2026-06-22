@@ -1,7 +1,7 @@
 package tests;
 
 import com.aventstack.extentreports.*;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
@@ -24,7 +24,7 @@ public class EndToEndCheckoutTest {
 
     @BeforeClass
     public void setUp() {
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extentReport.html");
+         ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
 
